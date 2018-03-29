@@ -15,3 +15,4 @@ def model_cnn_3DPoints(input_shape,nfilters,classes,dropout_par):
     model = Model(img_input, x, name='Kind')
     return model
 
+
