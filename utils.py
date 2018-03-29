@@ -1,6 +1,7 @@
-from keras.preprocessing.image import ImageDataGenerator
+import tensorflow as tf
 
-prep = ImageDataGenerator(
-	rescale=1./255,
-	shear_range=0.2)
+def resize_512(image):
+	return tf.image.resize_images(image, [512, 512])
+
+
 
